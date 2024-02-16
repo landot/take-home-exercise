@@ -8,6 +8,17 @@
     "url": "https://github.com/DevExpress/testcafe/issues"
   },
   "devDependencies": {
-    "testcafe": "*"
+    "@typescript-eslint/eslint-plugin": "^7.0.1",
+    "@typescript-eslint/parser": "^7.0.1",
+    "eslint": "^8.56.0",
+    "husky": "^9.0.11",
+    "testcafe": "*",
+    "typescript": "^5.3.3",
+    "typescript-eslint": "^7.0.1"
+  },
+  "scripts": {
+    "test": "testcafe chrome tests/test.ts",
+    "lint": "eslint . --ext .ts",
+    "prepare": "husky"
   }
 }

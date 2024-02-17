@@ -1,8 +1,8 @@
 {
-  "name": "basic-testcafe-example",
+  "name": "take-home-project-1",
   "version": "0.1.0",
-  "description": "Basic TestCafe API example",
-  "main": "tests/test.ts",
+  "description": "HE Take Home Project",
+  "main": "test/test.ts",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/DevExpress/testcafe/issues"
@@ -19,7 +19,7 @@
     "typescript-eslint": "^7.0.1"
   },
   "scripts": {
-    "test": "testcafe chrome tests/test.ts",
+    "test": "testcafe chrome test",
     "lint": "eslint . --ext .ts",
     "prepare": "husky"
   }

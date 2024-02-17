@@ -1,9 +1,15 @@
-import { Selector } from "testcafe";
+import { Header } from "./component/Header";
+import { MainContent } from "./component/MainContent";
 
-export default class GitHubRepository {
-    name: Selector;
+
+class GitHubRepositoryPage {
+    header: Header;
+    content: MainContent;
 
     constructor () {
-        this.name = Selector('#blah');
+        this.header = new Header();
+        this.content = new MainContent();
     }
 }
+
+export default new GitHubRepositoryPage();

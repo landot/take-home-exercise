@@ -1,3 +1,1 @@
-module.exports = {
-    "src": "test"
-}
+module.exports = {}

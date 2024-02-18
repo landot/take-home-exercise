@@ -16,11 +16,12 @@
     "eslint-plugin-testcafe": "^0.2.1",
     "husky": "^9.0.11",
     "testcafe": "^3.5.0",
+    "testcafe-reporter-html": "^1.4.6",
     "typescript": "^5.3.3",
     "typescript-eslint": "^7.0.1"
   },
   "scripts": {
-    "test": "testcafe chrome test",
+    "test": "testcafe chrome test --reporter spec,html:artifacts/test-results.html",
     "lint": "eslint . --ext .ts",
     "prepare": "husky"
   }

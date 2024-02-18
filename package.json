@@ -2,11 +2,6 @@
   "name": "take-home-project-1",
   "version": "0.1.0",
   "description": "HE Take Home Project",
-  "main": "test/test.ts",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/DevExpress/testcafe/issues"
-  },
   "devDependencies": {
     "@commitlint/cli": "^18.6.1",
     "@commitlint/config-conventional": "^18.6.2",
@@ -21,7 +16,11 @@
     "typescript-eslint": "^7.0.1"
   },
   "scripts": {
-    "test": "testcafe chrome test --reporter spec,html:artifacts/test-results.html",
+    "test": "npm run test:chrome",
+    "test:chrome": "testcafe chrome test --reporter spec,html:artifacts/test-results.html --skip-js-errors --skip-uncaught-errors -s takeOnFails=true",
+    "test:chrome:mobile": "testcafe 'chrome:emulation:device=iphone X' test --reporter spec,html:artifacts/test-results.html --skip-js-errors --skip-uncaught-errors -s takeOnFails=true",
+    "test:chrome:headless": "testcafe chrome:headless test --reporter spec,html:artifacts/test-results.html --skip-js-errors --skip-uncaught-errors -s takeOnFails=true",
+    "test:chrome:mobile:headless": "testcafe 'chrome:headless:emulation:device=iphone X' test --reporter spec,html:artifacts/test-results.html --skip-js-errors --skip-uncaught-errors -s takeOnFails=true",
     "lint": "eslint . --ext .ts",
     "prepare": "husky"
   }

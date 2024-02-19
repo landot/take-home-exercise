@@ -1,6 +1,6 @@
 import { expectedDescription, expectedLicense, parentProjectName, projectName } from "../constant/test-data";
 import GitHubApiUtil from "../util/github-api-util";
-import page from "../page-object/github-repository";
+import page from "../page-object/page/github-repository";
 
 fixture('Get first "create-react-app" search result and navigate to repo').beforeEach(async (t) => {
     const githubAPI = new GitHubApiUtil();

@@ -27,7 +27,7 @@ nvm install
 nvm use
 ```
 
-Install node modules:
+Install node modules: (Note: you may see a message about [3 high severity vulnerabilities](https://github.com/DevExpress/testcafe/issues/8140))
 ```bash
 npm install
 ```
@@ -51,3 +51,13 @@ npm install
     `npm run test:chrome:mobile:headless`
 
 
+## Extra Notes:
+
+- A HTML test report is saved to the `/artifacts/test-results.html` file for the most recent test run
+
+- Test failure screenshots are added to the `screenshots/` folder
+
+- A precommit hook is set up that requires:
+    - tests to pass
+    - code to pass linting rules
+    - commit messages to follow [conventional commit guidelines](https://www.conventionalcommits.org/en/v1.0.0/)

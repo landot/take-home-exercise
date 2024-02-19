@@ -18,8 +18,8 @@
   "scripts": {
     "test": "npm run test:chrome",
     "test:chrome": "testcafe chrome test --reporter spec,html:artifacts/test-results.html --skip-js-errors --skip-uncaught-errors -s takeOnFails=true",
-    "test:chrome:mobile": "testcafe 'chrome:emulation:device=iphone X' test --reporter spec,html:artifacts/test-results.html --skip-js-errors --skip-uncaught-errors -s takeOnFails=true",
     "test:chrome:headless": "testcafe chrome:headless test --reporter spec,html:artifacts/test-results.html --skip-js-errors --skip-uncaught-errors -s takeOnFails=true",
+    "test:chrome:mobile": "testcafe 'chrome:emulation:device=iphone X' test --reporter spec,html:artifacts/test-results.html --skip-js-errors --skip-uncaught-errors -s takeOnFails=true",
     "test:chrome:mobile:headless": "testcafe 'chrome:headless:emulation:device=iphone X' test --reporter spec,html:artifacts/test-results.html --skip-js-errors --skip-uncaught-errors -s takeOnFails=true",
     "lint": "eslint . --ext .ts",
     "prepare": "husky"

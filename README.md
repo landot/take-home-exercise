@@ -1,59 +1,53 @@
 # SDET Exercise
 
 ## Overview
+https://github.com/landot/take-home-exercise
 
 This repository contains browser-based tests using Typescript + TestCafe. These tests leverage the GitHub search API to perform a search on the term "create-react-app" and performs assertions based on the response.
 
 ## Prerequisites
 
-This setup assumes that you are using macOS. Make sure you have the following installed:
-
-- Node.js
-TODO add links to install Node
-- nvm (Node Version Manager)
-TODO add links to install nvm
-- npm (Node Package Manager)
-TODO add links to install npm
+Make sure you have the following installed:
+- nvm (you can check if it is installed by running `nvm --version`)
 
 ## Installation
 
 Clone the repository to your local machine:
 ```bash
-git clone <repository-url>
+git clone https://github.com/landot/take-home-exercise.git
 ```
 Move to the repo's directory:
 ```bash
-cd take-home-exercise-1
+cd take-home-exercise
 ```
-Install node modules
+
+Set Node version to lts/iron:
+```bash
+nvm install 
+nvm use
+```
+
+Install node modules:
 ```bash
 npm install
 ```
 
-To run tests:
+## To run tests:
+- Chrome (Desktop):
 
-    Chrome:
-
-    Chromium:
-
-    Firefox:
-
-    Edge:
-
-    Safari:
-
-
-Additional Arguments:
-
-    Headless Mode:
-
-    Desktop Browser:
-
-    Mobile Browser:
-
-    Concurrent Test Workers:
-
-Running Specific Tests:
-
+    `npm run test`
+    
+    or
+    
+    `npm run test:chrome`
+- Chrome (Headless Desktop):
+    
+    `npm run test:chrome:headless`
+- Chrome (Mobile):
+    
+    `npm run test:chrome:mobile`
+- Chrome (Headless Mobile):
+    
+    `npm run test:chrome:mobile:headless`
 
 
